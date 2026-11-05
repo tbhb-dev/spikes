@@ -147,6 +147,8 @@ description = "Absolute path into a credential or agent configuration directory"
 regex = '''(?:[A-Za-z]:[\\/]|/|~/)(?:[^\s"'`<>]{0,500}[\\/])?(?:\.config|\.ssh|\.aws|\.gnupg|\.codex|\.claude)(?:[\\/][^\s"'`<>]{0,500})?'''
 keywords = [".config", ".ssh", ".aws", ".gnupg", ".codex", ".claude"]
 
+[[rules.allowlists]]
+description = "Agent docs name the gh config directory for the agent login, which holds no secret in the line itself"
 regexTarget = "line"
 regexes = ['''GH_CONFIG_DIR=\$HOME/\.config/gh-agent''']
 
