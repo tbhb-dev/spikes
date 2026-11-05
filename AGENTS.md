@@ -10,13 +10,13 @@ This is tbhb-dev/spikes, the public repository of time-boxed technical spikes fo
 
 ## Running a spike
 
-Keep each spike in `spikes/s-N-<slug>/`, with the main document as `README.md`. The number comes from this repository's own counter, S-1, S-2, and so on. The coordinating session assigns it, so don't pick one yourself.
+Keep each spike in `spikes/s-N-<slug>/`, with the main document as `README.md`. The number comes from this repository's own counter, S-1, S-2, and so on. @tbhb assigns the number, so don't pick one yourself.
 
 - Keep runs and reruns beneath the spike's directory.
 - Read the question, prompt, dependencies, and existing evidence before running anything.
 - Honor each run's host, cost, privilege and failure bounds, and get authorization when the spike requires it.
 - Keep measured, reported, inferred, and unproved claims distinct.
-- Spikes inform design decisions, and other sessions make them. Don't edit another repository's documentation from here.
+- Spikes inform design decisions, and the repository a decision concerns records it. Don't edit another repository's documentation from here.
 - Write each Markdown paragraph on one line.
 
 ## Commits and pull requests
