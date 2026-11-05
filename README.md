@@ -4,7 +4,7 @@ This public repository holds time-boxed technical spikes for tbhb-dev work. Each
 
 ## Layout
 
-Each spike is a directory under `spikes/`, named `s-N-<slug>`. Its main document is `README.md`, and its runs go in the same directory.
+Spikes live in namespaces under `spikes/`: one per tbhb-dev project, plus `spikes/_/` for general work that belongs to no one project. Each spike is a directory `spikes/<namespace>/s-NNNNNN-<slug>/`, numbered from its namespace's own counter and zero-padded to six digits, with the ID `<namespace>/S-NNNNNN`, such as `afakt/S-000001`. The main document is `README.md`, and runs go in the same directory.
 
 ## Workflow
 

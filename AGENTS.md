@@ -10,7 +10,7 @@ This is tbhb-dev/spikes, the public repository of time-boxed technical spikes fo
 
 ## Running a spike
 
-Keep each spike in `spikes/s-N-<slug>/`, with the main document as `README.md`. The number comes from this repository's own counter, S-1, S-2, and so on. @tbhb assigns the number, so don't pick one yourself.
+Keep each spike in `spikes/<namespace>/s-NNNNNN-<slug>/`, with the main document as `README.md`. The namespace is the tbhb-dev project the spike is about, or `_` for general work. The number comes from the namespace's own counter, zero-padded to six digits, and the spike's ID is `<namespace>/S-NNNNNN`, such as `afakt/S-000001`. @tbhb assigns the number, so don't pick one yourself. A new namespace needs a `README.md` like the existing ones.
 
 - Keep runs and reruns beneath the spike's directory.
 - Read the question, prompt, dependencies, and existing evidence before running anything.
@@ -21,7 +21,7 @@ Keep each spike in `spikes/s-N-<slug>/`, with the main document as `README.md`. 
 
 ## Commits and pull requests
 
-- Branch first, as `spike/s-N-<slug>`. Every change lands through a pull request.
+- Branch first, as `spike/<namespace>/s-NNNNNN-<slug>`. Every change lands through a pull request.
 - Use Conventional Commits and a plain `git commit`, without `Signed-off-by` or `Co-authored-by`, and fill every section of `.github/PULL_REQUEST_TEMPLATE.md`.
 
 ## Checks
