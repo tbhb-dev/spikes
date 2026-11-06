@@ -159,7 +159,7 @@ regexTarget = "line"
 regexes = ['''"AWREL_CONNECT_TOKEN_FILE": "\$\{HOME\}/\.config/awrel/prd-connect-token"''']
 
 [[rules.allowlists]]
-description = "tools/interim/ is a verbatim copy of ascm's scripts; agent_identity.py falls back to Codex's default home to find its session logs"
+description = "History keeps the removed tools/interim/agent_identity.py, which falls back to Codex's default home directory when CODEX_HOME is unset; it names the directory, not a credential"
 paths = ['''^tools/interim/agent_identity\.py$''']
 regexTarget = "line"
 regexes = ['''Path\("~/\.codex"\)\.expanduser\(\)''']
