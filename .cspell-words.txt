@@ -48,6 +48,7 @@ starlark
 subdirs
 tailnet
 tbhb
+tbhbdev
 tbhbspikes
 testdata
 tfstate
