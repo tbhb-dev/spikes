@@ -36,7 +36,7 @@ _.path = [".bazel_env/bin"]
 
 [tools]
 bazelisk = "1.30.0"
-prek = "0.5.9"
+prek = "0.5.10"
 # Syncs the dev group, which pins prek for the git hooks.
 uv = "0.13.7"
 
