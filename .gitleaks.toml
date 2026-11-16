@@ -147,6 +147,10 @@ regex = '''(?:[A-Za-z]:[\\/]|/|~/)(?:[^\s"'`<>]{0,500}[\\/])?(?:\.config|\.ssh|\
 keywords = [".config", ".ssh", ".aws", ".gnupg", ".codex", ".claude"]
 
 [[rules.allowlists]]
+description = "This file names the credential directories in its own rule and allowlists; the default config used to exempt it as a whole, and without [extend] only this rule needs the exemption"
+paths = ['''^\.gitleaks\.toml$''']
+
+[[rules.allowlists]]
 description = "Agent docs name the gh config directory for the agent login, which holds no secret in the line itself"
 regexTarget = "line"
 regexes = ['''GH_CONFIG_DIR=\$HOME/\.config/gh-agent''']
