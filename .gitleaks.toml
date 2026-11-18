@@ -1,10 +1,9 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright Tony Burns
 
-# Review edits to this file as security policy. Start from gitleaks' default
-# rules and allowlist only what is justified, each with a reason.
-[extend]
-useDefault = true
+# Review edits to this file as security policy. The gitleaks wrapper in
+# @tbhb_rules supplies the default rules; allowlist only what is justified,
+# each with a reason.
 
 # `gitleaks dir` walks the working directory without reading .gitignore, so
 # the build output and tool caches that a local checkout holds would be
@@ -146,6 +145,10 @@ id = "credential-absolute-path"
 description = "Absolute path into a credential or agent configuration directory"
 regex = '''(?:[A-Za-z]:[\\/]|/|~/)(?:[^\s"'`<>]{0,500}[\\/])?(?:\.config|\.ssh|\.aws|\.gnupg|\.codex|\.claude)(?:[\\/][^\s"'`<>]{0,500})?'''
 keywords = [".config", ".ssh", ".aws", ".gnupg", ".codex", ".claude"]
+
+[[rules.allowlists]]
+description = "This file names the credential directories in its own rule and allowlists; the default config used to exempt it as a whole, and without [extend] only this rule needs the exemption"
+paths = ['''^\.gitleaks\.toml$''']
 
 [[rules.allowlists]]
 description = "Agent docs name the gh config directory for the agent login, which holds no secret in the line itself"
