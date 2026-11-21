@@ -36,9 +36,9 @@ _.path = [".bazel_env/bin"]
 
 [tools]
 bazelisk = "1.30.0"
-prek = "0.5.10"
+prek = "0.5.11"
 # Syncs the dev group, which pins prek for the git hooks.
-uv = "0.13.7"
+uv = "0.13.8"
 
 # Usage: mise run pr -- check | create [--dry-run] | edit --pr N
 [tasks.pr]
