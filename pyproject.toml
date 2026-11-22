@@ -16,7 +16,7 @@ dependencies = []
 [dependency-groups]
 dev = [
   # Runs the git hooks.
-  "prek==0.5.10",
+  "prek==0.5.11",
 ]
 
 [tool.uv]
